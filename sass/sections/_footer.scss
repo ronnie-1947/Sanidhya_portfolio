@@ -3,8 +3,15 @@
     background-color: $color-primary;
     display: flex;
     justify-content: center;
+    @include respond(phone) {
+        flex-direction: column;
+        padding: 10rem 0;
+    }
 
-    
+    &__info{
+        display: flex;
+        justify-content: center;
+    }
     &__mail{
         padding-right: 2rem;
         margin-right: 2rem;
@@ -12,11 +19,22 @@
         color: white;
         font-size: 2rem;
         letter-spacing: 1px;
+
+
+        @include respond(phone) {
+            text-align: center;
+            border-right: none;
+            margin: 0 auto;
+        }
     }
 
     &__social{
         display: flex;
         list-style: none;
+        @include respond(phone) {
+            margin-top: 3rem;
+            justify-content: center;
+        }
     }
 
     &__social-icon{

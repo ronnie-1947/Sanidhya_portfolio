@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "node-sass styles.scss styles.css",
-    "watch-sass": "nodemon -e scss -x \"npm start\""
+    "watch-sass": "nodemon -e scss -x \"npm start\"",
+    "compile:sass": "node-sass styles.scss style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' style.comp.css -o style.prefix.css",
+    "compress:css": "node-sass style.prefix.css style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "concat": "^1.0.3",
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {
+    "colorette": "^1.2.1"
   }
 }
