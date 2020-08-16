@@ -1,0 +1,28 @@
+.footer{
+    padding: 10rem;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+
+    
+    &__mail{
+        padding-right: 2rem;
+        margin-right: 2rem;
+        border-right: 2px solid white;
+        color: white;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    &__social{
+        display: flex;
+        list-style: none;
+    }
+
+    &__social-icon{
+        fill: white;
+        margin-right: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}

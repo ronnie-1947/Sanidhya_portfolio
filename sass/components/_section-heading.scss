@@ -1,0 +1,13 @@
+.section-heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    position: relative;
+
+    .icon-design1{
+        position: absolute;
+        width: 20rem;
+        left: 45%;
+        top: -50px;
+    }
+}

@@ -1,0 +1,52 @@
+.academics{
+    background-color: $color-primary;
+    padding: 7rem 0;
+
+    &__score-box{
+        padding: 2rem 0;
+        width: 80%;
+        margin: 0 auto;
+
+        .score{
+
+            &__box{
+                margin-bottom: 3rem;
+            }
+
+            &__meta{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__cat{
+                font-size: 4rem;
+                font-weight: 300;
+                color: white;
+            }
+
+            &__bar{
+                height: 1.5rem;
+                border-radius: 2rem;
+                background-color: $color-grey-dark;
+                overflow: hidden;
+            }
+            &__fill{
+                height: 1.4rem;
+                border-radius: 2rem;
+                background-color: $color-grey-light;
+                
+                &--ug{
+                    width: 89.16%;
+                }
+                &--12{
+                    width: 79%;
+                }
+                &--10{
+                    width: 88.35%;
+                }
+            }
+        }
+
+
+    }
+}

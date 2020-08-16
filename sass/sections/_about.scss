@@ -1,0 +1,20 @@
+.about {
+    margin: 17rem 0;
+
+    &__me{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        &::before{
+            content: '';
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
+            background-color: $color-primary-light;
+            position: absolute;
+            left: -5rem;
+            top: -5.5rem;
+        }
+    }
+}
